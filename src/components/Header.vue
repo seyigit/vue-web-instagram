@@ -1,27 +1,27 @@
 <template>
   <header class="header">
     <Container class="header-inner">
-      <div class="logo">
           <router-link to="/">ISTAGRAM</router-link> 
-      </div>
       <form class="input">
           <input type="text" placeholder="Search">
       </form>
-    <nav id="nav">
-      <router-link to="/">Home</router-link> 
-      <router-link to="/about">Direct</router-link>
-      <router-link to="/about">Explore</router-link>
-      <router-link to="/about">Profile</router-link>
-    </nav>
+    <navbar id="navigation">
+      <router-link to="/"><IconHome class="logo"/></router-link> 
+      <router-link to="/direct">Direct</router-link>
+      <router-link to="/explore">Explore</router-link>
+      <router-link to="/profile">Profile</router-link>
+    </navbar>
     </Container>
   </header>
 </template>
 <script>
+import IconHome from "@/icons/home.svg"
 import Container from "@/components/Container"
 export default {
     name : "Header",
     components : {
-        Container
+        Container,
+        IconHome
     }
 }
 </script>
@@ -41,5 +41,5 @@ export default {
     }
 
 }
-    
+        
 </style>

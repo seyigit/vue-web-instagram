@@ -1,11 +1,12 @@
 <template>
   <div>
-      <h1>SAVE</h1>
+      <h1>Direct</h1>
   </div>
 </template>
 
 <script>
 export default {
+    name : "Direct"
 
 }
 </script>
