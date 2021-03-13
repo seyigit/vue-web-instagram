@@ -35,8 +35,8 @@ export default {
     right: 0;
 
     .header-inner{
-        display: grid;
-        grid-auto-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
