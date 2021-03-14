@@ -1,26 +1,31 @@
 <template>
-  <div class="main">
+  <div class="app">
     <Header/>
-    <Container>
+    <main class="main">
+      <Container>
     <router-view />
     </Container>
+    </main>
   </div>
 </template>
-
-<style lang="scss">
-.main{
-  padding-top: 100px;
-  background: #ddd;
-}
-</style>
 <script>
-import Container from "@/components/Container"
-import Header from "@/components/Header"
+import Header from '@/components/Header'
+import Container from '@/components/Container'
 export default {
-  name:"App",
+  name: "App",
   components : {
     Header,
     Container
   }
 }
 </script>
+<style scoped>
+  .main{
+    padding-top: 40px!important;
+    background: rgb(var(--b3f));
+    height: 100vh;
+  }
+
+
+
+</style>
