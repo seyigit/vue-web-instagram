@@ -1,8 +1,6 @@
 <template>
   <div class="home">
     <div class="timeline">
-      <h1>HOME</h1>
-
       <Post />
     </div>
     <div class="sidebar">
